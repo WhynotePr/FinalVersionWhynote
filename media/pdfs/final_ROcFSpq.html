@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="mycss.css">
+    <link rel="stylesheet" type="text/css" href="owl/owl.carousel.css">
+
+
+<title>Books</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="72" class="position-relative">
+  <header class="fixed-top page-header">
+        <nav id="navbar" class="navbar navbar-expand-sm navbar-custom">
+          <a class="navbar-brand" href="#home">Books</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon">
+     
+              </span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-between" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                   <a class="nav-link" href="#top5">Top for today</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#search">Search here</a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+  </header>
+  <main>
+    <section id="home" class="d-flex align-items-center position-relative vh-100 cover hero" style="background-image:url(https://www.neh.gov/sites/default/files/2018-06/openbooks.jpg);">
+        <div class="container-fluid container-fluid-max">
+            <div class="row">
+              <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                <h1 class="text-white">Your favourite library</h1>
+                <div class="mt-3">
+                  <h3 class="text-white">Let's go!</h3>
+                </div>
+              </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why" class="why">
+      <div class="container-fluid container-fluid-max why-div">
+        <div class="row text-center py-5">
+          <div class="col-12 pb-4">
+            <h2>Why Books?</h2>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x"></i>
+              <i class="fas fa-map-marked fa-stack-1x"></i>
+            </span>
+            <h3 class="mt-3">Search</h3>
+            <p>Here you can find books according to your own preferences.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-red"></i>
+              <i class="fas fa-plane fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 h4">Top</h3>
+            <p>A cool opportunity to check daily top.</p>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3">
+            <span class="fa-stack fa-2x">
+              <i class="fas fa-circle fa-stack-2x text-red"></i>
+              <i class="fas fa-car fa-stack-1x text-white"></i>
+            </span>
+            <h3 class="mt-3 text-red h4">Fun</h3>
+            <p>Provides good mood and makes your day better.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="top5" class="top5">
+      <div class="page-content page-container" id="page-content">
+      <div class="padding">
+          <div class="row container-fluid">
+            <h2>Hey there!</h2>
+            <h2> It's time to check The New York Times Best Sellers Top Hardcover Fiction!</h2>
+              <div class="col-lg-12">
+                <div id="best-seller-titles" class="owl-carousel"></div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="search-sec" class="search-sec">
+      <div class="page-content page-container search-div" id="page-content">
+        <div class="padding">
+          <h1>And now let's find your favourite book!</h1>
+          <div class="row">
+            <div class="col-10">
+              <div class="md-form active-orange active-orange-2 mb-3 mt-0">
+                <input id="search"class="form-control" type="text" placeholder="Title" aria-label="Search">
+              </div>
+            </div>
+            <div class="col-2">
+              <button id="button" type="button" class="btn my-2 my-sm-0">Search</button>
+              <!-- <button id="button" type="button">Search</button> -->
+            </div>
+          </div>
+          <div class="container scroll-area">
+            <div id="results" class="row"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+<footer class="page-footer font-small teal pt-1">
+  <div class="text-center py-3" style="height: 3rem;">Created by Kate Belskaya</div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="owl/owl.carousel.min.js"></script>
+  <script src="myscript.js"></script>
+  <script  src="index.js"></script>
+  <script src="nytimesArchive.js"></script>
+  <script src="search.js"></script>
+</body>
+</html>

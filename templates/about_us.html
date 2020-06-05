@@ -1,0 +1,93 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+  <h2>The Authors</h2>
+  <div class="container marketing mt-5">
+    <!-- Two columns of text -->
+    <div class="row d-flex justify-content-center">
+      <div class="col-lg-4 text-center">
+        <img src="https://i.pinimg.com/564x/e0/10/54/e01054c4121543b31b89d7a5fe5246ea.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <h2>Nadzya Hryshalevich</h2>
+        <p>Nadzya wants to become a mathematician. Also she is a developer of this website.</p>
+        <p><a class="btn btn-secondary" href="https://t.me/naadzya" role="button" target="_blank">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img src="https://i.pinimg.com/564x/d9/f6/a2/d9f6a2028faaa23a7e99fe088065c8ba.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <h2>Kate Belskaya</h2>
+        <p>Kate is a future mathematician and developer of this professional website.</p>
+        <p><a class="btn btn-secondary" href="https://t.me/caterpillarkate" role="button" target="_blank">View details &raquo;</a></p>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+
+    <!-- START THE FEATURETTES -->
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Create notes using different folders. <span class="text-muted">It’ll blow your mind.</span></h2>
+        <p class="lead">Notes are displayed as “cards” according to the date of creation. The note has a convenient editor where you can even insert pictures.</p>
+      </div>
+      <div class="col-md-5">
+          <!--<img src="{% static 'note.png' %}" width="500" height="500">-->
+        </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading">Use calendar to manage your time. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">
+            The cell that represents today's date is highlighted.
+            When creating an event, it is checked that the end time does not precede the start.</p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <!--<img src="{% static 'calendar.png' %}" width="500" height="500" style="position: fixed">-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">Keep important files here. <span class="text-muted">And not only important.</span></h2>
+        <p class="lead">
+            When uploading a file, you can enter its name or author, as well as upload its cover (if necessary).
+        </p>
+      </div>
+      <div class="col-md-5">
+        <!--<img src="{% static 'file.png' %}" width="500" height="500" style="position: relative">-->
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- /END THE FEATURETTES -->
+
+    <!-- Two columns of text -->
+    <div class="mb-5">
+    <h2>We are grateful to</h2>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-4 text-center">
+        <img src="https://i.pinimg.com/564x/5c/e0/12/5ce0121a36a852bbfe804ea7981a5b38.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <h4>Karina Kluchnik</h4>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img src="https://i.pinimg.com/564x/86/67/1a/86671a3eb5110c2b03b0df45467982ba.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <h4>Tanya Verbovich</h4>
+      </div><!-- /.col-lg-4 -->
+      <div class="col-lg-4 text-center">
+        <img src="https://i.pinimg.com/564x/fc/7d/e4/fc7de41e90403dd187b6d922f8508091.jpg" class="bd-placeholder-img rounded-circle" width="140" height="140" focusable="false" role="img" aria-label="Placeholder: 140x140">
+        <h4>Andrew Karmanovich</h4>
+      </div><!-- /.col-lg-4 -->
+    </div><!-- /.row -->
+
+    <hr class="featurette-divider">
+
+  </div><!-- /.container -->
+{% endblock %}

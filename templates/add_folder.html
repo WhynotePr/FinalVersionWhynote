@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>New folder</h1>
+    <p>If you want to create empty one just write empty in name field</p>
+    <form method="POST">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Create</button>
+    </form>
+{% endblock %}

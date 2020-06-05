@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <form method="POST">{% csrf_token %}
+    	<div class="container">
+  			<div class="row ">
+  				<div class="col-md-auto">
+  				{{form.note_title}}<br>
+  			</div>
+  			<div class="col-1"></div>
+  			</div>
+
+    	<div class="row editor">
+    		<div class="col-md-auto">
+    		{{ form.media }}
+        	{{ form.note_text | safe}}
+        	</div>
+    	</div>
+
+        <div class="row ">
+  			<div class="col-md-auto">
+  			     <small id="emailHelp" class="form-text text-muted">Your folder should consist of one word without special symbols</small>
+  				{{form.tag}}<br>
+  			</div>
+  		</div>
+  		<div class="row">
+          <div class="col-3 col-md-1">
+            <button type="submit" class="save btn btn-warning">Save</button>
+          </div>
+          {% if val %}
+          <div class="col-3 col-md-1">
+    	    <a class="btn btn-danger" href="{% url 'first:delete_note' note_id=id %}">Delete</a>
+    	  </div>
+		  {% endif %}
+		</div><br>
+
+
+
+		</div>
+    </form>
+{% endblock %}
